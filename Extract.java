@@ -20,7 +20,7 @@ public class Extract {
      */
 	public static Timespan getTimespan(List<Tweet> tweets) {
 	    if (tweets.isEmpty()) {
-	        return null; // or handle this case according to your design
+	        return null;
 	    }
 
 	    Instant start = tweets.get(0).getTimestamp();
