@@ -33,7 +33,6 @@ public class ExtractTest {
     }
     @Test
     public void testGetTimespanSameTimestamp() {
-        // Use d2 for same timestamp to ensure end is set correctly
         Tweet tweet3 = new Tweet(3, "user3", "Same time tweet", d2);
         Timespan timespan = Extract.getTimespan(Arrays.asList(tweet1, tweet2, tweet3));
         
